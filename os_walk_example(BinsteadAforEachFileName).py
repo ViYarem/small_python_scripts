@@ -11,7 +11,7 @@ for d in os.walk(basename):
         os.chdir(Fp)
 
         for filename in os.listdir():
-            dst=filename.replace("_1","_2")
+            dst=filename.replace("A","B")
             os.rename (filename, dst)
     
             print(filename + ' to ' + dst)
